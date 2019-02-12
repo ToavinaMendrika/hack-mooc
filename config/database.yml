@@ -19,7 +19,7 @@ default: &default
 
 development:
   <<: *default
-  database: mook_development
+  database: mook
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: mook_production
+  database: mook
   username: mook
   password: <%= ENV['MOOK_DATABASE_PASSWORD'] %>
